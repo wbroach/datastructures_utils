@@ -1,0 +1,12 @@
+package datastructures.utils; 
+
+public class BinaryTreeUtils {
+
+    public static void PrintTree() {
+
+	System.out.println("TEST SUCCEEDED!!");
+
+    }
+
+
+}
