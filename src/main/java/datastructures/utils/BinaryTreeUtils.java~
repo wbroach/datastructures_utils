@@ -2,7 +2,7 @@ package datastructures.utils;
 
 public class BinaryTreeUtils {
 
-    public static void PrintTree() {
+    public static void printTree() {
 
 	System.out.println("TEST SUCCEEDED!!");
 
