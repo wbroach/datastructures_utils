@@ -41,6 +41,10 @@ public class Heap<T extends Comparable> extends BinaryTree<T> {
 
 
     @Override
+    public T delete(T elem) {
+	return delete(); // does nothing with the passed obj, as this is a heap
+    }
+
     public T delete() {
 
 	if (size == 0) { return null; }
@@ -140,7 +144,6 @@ public class Heap<T extends Comparable> extends BinaryTree<T> {
 	    }
 
 	    return isValidRec(leftIdx) && isValidRec(rightIdx);
-
 	}
 
 

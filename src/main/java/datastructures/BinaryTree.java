@@ -6,7 +6,7 @@ public abstract class BinaryTree<T> {
 
     public abstract void insert(T elem); 
 
-    public abstract T delete();
+    public abstract T delete(T elem);
 
     public abstract ArrayList<T> toArray();
 
