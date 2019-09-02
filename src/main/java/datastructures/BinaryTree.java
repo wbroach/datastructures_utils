@@ -2,7 +2,7 @@ package datastructures;
 
 import java.util.ArrayList;
 
-public abstract class BinaryTree<T extends Comparable> {
+public abstract class BinaryTree<T> {
 
     public abstract void insert(T elem); 
 

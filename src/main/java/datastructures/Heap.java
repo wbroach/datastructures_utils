@@ -8,7 +8,7 @@ public class Heap<T extends Comparable> extends BinaryTree<T> {
     private ArrayList<T> nodes; 
     private int size; 
 
-    public <T>Heap() {
+    public <T> Heap() {
 
 	nodes = new ArrayList<>(); 
 	size = 0;
@@ -50,6 +50,7 @@ public class Heap<T extends Comparable> extends BinaryTree<T> {
 	
 	nodes.set(0, nodes.get(size));
 	reheapDown(0);
+	
 	return ret;
     }
 
@@ -87,7 +88,6 @@ public class Heap<T extends Comparable> extends BinaryTree<T> {
 	    
 	}
 	
-
     }
 
     @Override
@@ -142,7 +142,6 @@ public class Heap<T extends Comparable> extends BinaryTree<T> {
 	    return isValidRec(leftIdx) && isValidRec(rightIdx);
 
 	}
-
 
 
     }
