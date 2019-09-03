@@ -42,7 +42,9 @@ public class Heap<T extends Comparable> extends BinaryTree<T> {
 
     @Override
     public T delete(T elem) {
+
 	return delete(); // does nothing with the passed obj, as this is a heap
+
     }
 
     public T delete() {
@@ -56,6 +58,7 @@ public class Heap<T extends Comparable> extends BinaryTree<T> {
 	reheapDown(0);
 	
 	return ret;
+
     }
 
     private void reheapDown(int nodeIdx) {
@@ -88,15 +91,17 @@ public class Heap<T extends Comparable> extends BinaryTree<T> {
 		nodes.set(max, temp);
 
 		reheapDown(max);
-	    }
-	    
+	    }	    
+
 	}
 	
     }
 
     @Override
     public ArrayList<T> toArray() {
+
 	return nodes; 
+
     }
 
     @Override 
@@ -144,8 +149,8 @@ public class Heap<T extends Comparable> extends BinaryTree<T> {
 	    }
 
 	    return isValidRec(leftIdx) && isValidRec(rightIdx);
-	}
 
+	}
 
     }
 
