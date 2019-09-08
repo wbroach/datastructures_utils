@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class BinaryTreeUtils {
 
+    private static final int TABSIZE = 4; // number of spaces equiv to a tab
+
     public static <T> void printTree(ArrayList<T> nodes, int size) {
 	int currLevel = 0; 
 	StringBuilder buf = new StringBuilder();
@@ -32,9 +34,8 @@ public class BinaryTreeUtils {
 	
     }
     
-    public static int log2(int x) {
+    private static int log2(int x) {
 	return (int) (Math.log(x) / Math.log(2));
     }
-
 
 }
